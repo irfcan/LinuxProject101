@@ -1,0 +1,1 @@
+grep "Failed password for invalid user" auth.log | awk '{print $11}' | sort | uniq -c > invalid_user.txt
